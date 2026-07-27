@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <FIeldset>
+    <legend>Employee Details</legend>
+    <form autocomplete="off" action="">
+    <div>
+        <label for="">First Name :</label>
+        <input type="text" name="FirstName" autocomplete="off" autofocus required pattern="[A-Za-z]+" title="Leteer Only" placeholder="Enter Your FirstName">
+    </div>
+    <div>
+        <label for="">Last Name :</label>
+        <input type="text" name="LasttName" autocomplete="off" required minlength="5" title="At Least 5 Character" placeholder="Enter Your LasttName">
+    </div>
+    <div>
+        <label for="">Mobile :</label>
+        <input type="NUMBER" name="Mobile" required pattern="01[0125][0-9]{8}" maxlength="11" minlength="11" title="Must Start With 010 , 011 , 012 and contain 11 digits" placeholder="01xxxxxxxxx">
+    </div>
+    <div>
+        <label for="">Courses :</label>
+        <input list="Courses" name="Courses">
+        <datalist id="Courses">
+            <option>chose a course</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+            <option>PHP</option>
+            <option>PYTHON</option>
+        </datalist>
+    </div>
+    <div>
+        <label for="Upload Image"></label>
+        <input type="file" name="Image" accept=".png">
+    </div>
+    <div>
+        <label for="">comment :</label>
+        <textarea name="comment" rows="5" cols="30" required placeholder="Enter Your Comment"></textarea>
+    </div>
+    <div>
+        <label for="">Date :</label>
+        <input type="date" name="Date" required>
+    </div>
+    <div>
+        <label for="">Gender :</label>
+        <input type="radio" name="Gender" value="Female" required><label for="">Female</label>
+        <input type="radio" name="Gender" value="Male" required><label for="">Male</label>
+    </div>
+    <div>
+        <label for="">Track :</label>
+        <input type="checkbox" name="Track" value="1"><label for="">Frontend</label>
+        <input type="checkbox" name="Track" value="2"><label for="">Backend</label>
+        <input type="checkbox" name="Track" value="3"><label for="">AI developer</label>
+    </div>
+    <div>
+        <label for="">Range :</label>
+        <input type="range" name="Range" min="10" max="100" value="10">
+    </div>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+    </form>
+    </FIeldset>
+</body>
+</html>
