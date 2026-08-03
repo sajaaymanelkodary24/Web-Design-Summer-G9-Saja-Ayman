@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.team 
+{
+    padding: 80px 0;
+}
+.container
+{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card
+{
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.image img
+{
+    width: 100%;
+   display: block;
+}
+
+.info
+{
+    width: 80%;
+    background: #fff;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.4s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+
+.info h3
+{
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.info p
+{
+    color: #888;
+    font-size: 15px;
+}
+
+
+.card:hover .info
+{
+    bottom: -20px;
+    opacity: 1;
+}
