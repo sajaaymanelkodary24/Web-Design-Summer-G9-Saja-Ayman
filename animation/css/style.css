@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.road
+{
+    position: relative;
+    width: 1366px;
+    height: 607px;
+    background: #000;
+    overflow: hidden;
+}
+
+.line
+{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+}
+
+.top
+{
+    top: 250px;
+}
+
+.bottom
+{
+    bottom: 250px;
+}
+
+.car
+{
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: -180px;
+    transform: translateY(-50%);
+    animation: movcar 8s linear infinite;
+}
+
+@keyframes movcar 
+{
+    0%
+    {
+        transform: translate(-180px , -50%);
+    }
+
+    50%
+    {
+        transform: translate(500px , -50%);
+    }
+
+    100%
+    {
+        transform: translate(1180px , -50%);
+    }
+}
