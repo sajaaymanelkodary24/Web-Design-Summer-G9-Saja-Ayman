@@ -1,0 +1,41 @@
+@media (max-width:992px)
+{
+    .container
+    {
+        width: 90%;
+    }
+    
+    .text .img
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width:768)
+{
+    header ul
+    {
+        display: none;
+    }
+
+    .menu
+    {
+        display: block;
+    }
+
+    h1
+    {
+        font-size: 32px;
+    }
+
+    .img img
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    footer .container
+    {
+        text-align: center;
+    }
+}
