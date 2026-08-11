@@ -1,14 +1,10 @@
-var items = document.querySelectorAll("li")
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
 
-items.forEach(function(item) {
-
-    item.onclick = function() {
-
-        items.forEach(function(item) {
-            item.style.color = ""
-        })
-
-        this.style.color = "red"
-    }
-
-})
+li {
+    cursor: pointer;
+    font-size: 18px;
+}
